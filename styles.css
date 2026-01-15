@@ -1,0 +1,119 @@
+:root  {
+    --fazbear-brown: rgb(218, 165, 96);
+    --faint-gray: rgb(233, 233, 233);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%
+}
+
+.sign-up-form {
+    display: grid;
+    height: 100vh;
+    grid-template:  1fr 1fr 1fr/ 1fr 2fr;
+    grid-template-areas:
+        "sidebar top"
+        "sidebar middle"
+        "sidebar bottom"
+    ;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    position: relative;
+}
+
+.side-image {
+    width: 100%;
+    height: auto;
+}
+
+.brand-container {
+    background-color: rgba(0, 0, 0, 0.254);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    position: absolute;
+    height: 8rem;
+    width: 100%;
+    top: 30%;
+    color: white;
+}
+
+.logo-image{
+    width: auto;
+    height: 80%;
+}
+
+.top,
+.middle,
+.bottom {
+    padding-left: 32px;
+}
+
+.top {
+    grid-area: top;
+    background-color: var(--faint-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 32px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: middle;
+    gap: 16px;
+}
+
+.middle > form{
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    gap: 1rem;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+input:valid {
+    background-color: lightblue;
+}
+
+input:invalid {
+    background-color: lightcoral;
+}
+
+.bottom {
+    grid-area: bottom;
+    background-color: var(--faint-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+    padding-top: 32px;
+}
+
+button {
+    background-color: var(--fazbear-brown);
+    color: white;
+    border-radius: 6px;
+    height: 3rem;
+    width: 250px;
+}
+
+a {
+    color: var(--fazbear-brown);
+}

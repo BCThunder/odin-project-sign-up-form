@@ -89,11 +89,11 @@ body {
 }
 
 input:valid {
-    background-color: lightblue;
+    border-color: lightblue;
 }
 
 input:invalid {
-    background-color: lightcoral;
+    border-color: lightcoral;
 }
 
 .bottom {

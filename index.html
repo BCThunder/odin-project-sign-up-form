@@ -26,41 +26,43 @@
 
         <div class="middle">
             Let's do this!
-            <form>
+            <form id="sign-up-form">
                 <div class="form-item">
                     <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" required>
                 </div>
 
                 <div class="form-item">
                     <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" required>
                 </div>
 
                 <div class="form-item">
                     <label for="email">EMAIL</label>
-                    <input type="email" id="email" name="email">
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
                 </div>
 
                 <div class="form-item">
                     <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                    <input type="tel" id="phone-number" name="phone-number" placeholder="123-456-7890" required>
                 </div>
 
                 <div class="form-item">
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
                 </div>
 
                 <div class="form-item">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="confirm-password" id="confirm-password" name="confirm-password">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
                 </div>
             </form>
         </div>
 
         <div class="bottom">
-            <button type="button" class="create-account">Create Account</button>
+            <button type="submit" class="create-account" form="sign-up-form">
+                Create Account
+            </button>
             <p>Already have an account? <a>Log in</a></p>
         </div>
     </div>
